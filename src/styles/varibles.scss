@@ -1,0 +1,15 @@
+//变量定义 eg:字体，背景颜色，按钮颜色
+//前缀
+$css-prefix:xmo--;
+
+//颜色
+$primary-color                :#2d8cf0;
+$info-color                   :#2db7f5;
+$success-color                :#19be6b;
+$warning-color                :#ff9900;
+$error-color                  :#ed3f14;
+$transparent-color            :transparent;
+
+$link-color                   :#2D8cF0;
+$link-hover-color             :tint($link-color,20%);
+$link-active-color            :shade($link-color,5%);

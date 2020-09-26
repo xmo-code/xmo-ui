@@ -1,0 +1,4 @@
+//混入
+@mixin tint($color,$value){
+    border-bottom-color: $color;
+}
