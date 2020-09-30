@@ -1,13 +1,11 @@
 <template>
   <div>
-    <xmo-button type="primary">test</xmo-button>
+    <router-link to="/button" target="_self">按钮</router-link>
   </div>
 </template>
 
 <script>
-import XmoButton from "../components/button/button";
 export default {
-  name: "home",
-  components: { XmoButton }
+  name: "home"
 };
 </script>

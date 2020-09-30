@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@views/Home";
+import Button from "@views/basic/Button";
 let routes;
 routes = [
   {
     path: "/",
-    name: "/Home",
+    name: "home",
     component: Home
+  },
+  {
+    path: "/button",
+    name: "button",
+    component: Button
   }
 ];
 

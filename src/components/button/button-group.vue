@@ -1,5 +1,5 @@
 <template>
-  <div class="xmo__btn--group"><slot></slot></div>
+  <div class="xmo-btn-group"><slot></slot></div>
 </template>
 
 <script>

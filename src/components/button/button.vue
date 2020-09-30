@@ -1,6 +1,6 @@
 <template>
   <button
-    class="xmo__btn"
+    class="xmo-btn"
     @click="handleClick"
     :style="{
       backgroundColor: bgColor,
@@ -8,12 +8,12 @@
       'border-color': borderColor
     }"
     :class="[
-      'xmo__btn--' + type,
+      'xmo-btn-' + type,
       {
         'is-plain': plain,
         'is-round': round,
         'is-long': long,
-        'xmo__btn--block': block,
+        'xmo-btn-block': block,
         'no-radius': noRadius
       },
       iconClass
@@ -21,7 +21,7 @@
     :disabled="disabled"
   >
     <i :class="icon" v-if="icon"></i>
-    <i class="xmo__icon--loading" v-if="loading && !icon"></i>
+    <i class="xmo-icon-loading" v-if="loading && !icon"></i>
     <slot></slot>
   </button>
 </template>
@@ -76,7 +76,7 @@ export default {
     //计算属性
     // eslint-disable-next-line vue/return-in-computed-property
     iconClass() {
-      if (this.icon !== "") return "xmo__hasIconBtn";
+      if (this.icon !== "") return "xmo-hasIconBtn";
     }
   }
 };

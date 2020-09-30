@@ -1,2 +1,5 @@
-import Button from "@components/button/button";
+import Button from "./button";
+import ButtonGroup from "./button-group";
+
+Button.group = ButtonGroup;
 export default Button;
