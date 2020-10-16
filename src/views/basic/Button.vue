@@ -60,16 +60,17 @@
         <xmo-button>3</xmo-button>
         <xmo-button>4</xmo-button>
       </xmo-button-group>
+      <xmo-button-group>
+        <xmo-button>1</xmo-button>
+        <xmo-button>2</xmo-button>
+      </xmo-button-group>
     </div>
   </div>
 </template>
 
 <script>
-import XmoButtonGroup from "../../components/button/button-group";
-import XmoButton from "../../components/button/button";
 export default {
-  name: "Button",
-  components: { XmoButton, XmoButtonGroup }
+  name: "Button"
 };
 </script>
 
