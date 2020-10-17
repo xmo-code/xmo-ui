@@ -1,10 +1,21 @@
-```
-   _  __ __  _______        __  ______
-  | |/ //  |/  / __ \      / / / /  _/
-  |   // /|_/ / / / /_____/ / / // /  
- /   |/ /  / / /_/ /_____/ /_/ // /   
-/_/|_/_/  /_/\____/      \____/___/   
+# xmo-ui
+
+> XMO::UI
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-一套基于Vue3 的UI组件库
-
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

@@ -1,23 +1,15 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Home from "@views/Home";
-import Button from "@views/basic/Button";
-let routes;
-routes = [
-  {
-    path: "/",
-    name: "home",
-    component: Home
-  },
-  {
-    path: "/button",
-    name: "button",
-    component: Button
-  }
-];
+import Vue from 'vue'
+import Router from 'vue-router'
+import HelloWorld from '@/components/HelloWorld'
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
-});
+Vue.use(Router)
 
-export default router;
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
+    }
+  ]
+})
