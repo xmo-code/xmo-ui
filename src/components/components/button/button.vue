@@ -33,8 +33,42 @@
       loading: {
         type: Boolean,
         default: false
+      },
+      noRadius: {
+        type: Boolean,
+        default: false
+      },
+      bgColor: {
+        type: String,
+        default: ''
+      },
+      borderColor: {
+        type: String,
+        default: ''
+      },
+      icon: {
+        type: String,
+        default: ''
+      },
+      color: {
+        type: String,
+        default: ''
+      },
+      block: Boolean,
+      disabled: Boolean,
+      plain: Boolean,
+      round: Boolean
+  },
+    methods: {
+      handleClick (event) {
+        if (this.disabled) return
+        this.$emit('click', event)
       }
-
+    },
+    computed: {
+      iconClass () {
+        if (this.icon !== '') return 'xmo-hasIconBtn'
+      }
     }
-  };
+  }
 </script>
